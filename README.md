@@ -37,21 +37,20 @@ write to `outputs/`; archived results are never overwritten by these commands.
 
 ## Which file reproduces which figure?
 
-Figure numbers can change during editing, so this table uses stable LaTeX labels
-and the exact paths currently used by `\includegraphics`.
+Run the following commands from the repository root.
 
-| Paper figure / label | Paper PDF path | Command from repository root | Generated PDF |
-|---|---|---|---|
-| Simulation: three panels, `fig:error` | `Styles/five_methods_threepanels.pdf` | `python simulation/plot_results.py` | `simulation/outputs/figures/five_methods_threepanels.pdf` |
-| MNIST error curve, `fig:mnist_noise_error` | `Styles/mnist_rank10_five_methods_raw_signs/recovery_error_five_methods.pdf` | `python mnist/plot.py` | `mnist/outputs/figures/recovery_error_five_methods.pdf` |
-| MNIST factors at σ=0, `fig:mnist_noise_0_vis` | `Styles/mnist_rank10_five_methods_raw_signs/factors_sigma0.000.pdf` | `python mnist/plot.py` | `mnist/outputs/figures/factors_sigma0.000.pdf` |
-| MNIST factors at σ=2, `fig:mnist_noise_2_vis` | `Styles/mnist_rank10_five_methods_raw_signs/factors_sigma2.000.pdf` | `python mnist/plot.py` | `mnist/outputs/figures/factors_sigma2.000.pdf` |
-| MNIST enlarged factors 6,10,3, `fig:mnist_noise_2_vis_detail` | `Styles/mnist_rank10_five_methods_raw_signs/factors_sigma2.000_SF_SRF_factors6_10_3.pdf` | `python mnist/plot_selected_factors.py` | `mnist/outputs/figures/factors_sigma2.000_SF_SRF_factors6_10_3.pdf` |
+| Figure | Command | Generated PDF |
+|---|---|---|
+| Simulation: three panels | `python simulation/plot_results.py` | `simulation/outputs/figures/five_methods_threepanels.pdf` |
+| MNIST error curve | `python mnist/plot.py` | `mnist/outputs/figures/recovery_error_five_methods.pdf` |
+| MNIST factors at σ=0 | `python mnist/plot.py` | `mnist/outputs/figures/factors_sigma0.000.pdf` |
+| MNIST factors at σ=2 | `python mnist/plot.py` | `mnist/outputs/figures/factors_sigma2.000.pdf` |
+| MNIST enlarged factors 6,10,3 | `python mnist/plot_selected_factors.py` | `mnist/outputs/figures/factors_sigma2.000_SF_SRF_factors6_10_3.pdf` |
 
 The selected-factor plot is independent: it computes its common color limits
 from the saved σ=0 and σ=2 dictionaries, so running `plot.py` first is optional.
-Original paper PDFs are preserved in `paper_figures/`; checksums and source
-commit are recorded in `provenance.json`. PDF creation timestamps may differ
+Reference PDFs are preserved in `paper_figures/`; their checksums are recorded
+in `provenance.json`. PDF creation timestamps may differ
 on regeneration; numerical and rendered-figure agreement matter instead.
 
 ## Rerun the complete experiments
@@ -92,13 +91,7 @@ than silently replacing fresh results with archived values.
   RNG, error metric, median/IQR plotting.
 - [mnist/README.md](mnist/README.md): MNIST input selection, Varimax implementation,
   noise generation, aggregation, mean/SD plotting, reference orientation.
-- [PROTOCOL_AUDIT.md](PROTOCOL_AUDIT.md): manuscript/code differences requiring
-  attention when writing the methods and captions.
 - `validation.json`: checks actually completed when this repository was prepared.
 - `tools/verify_results.py`: reusable numerical verification.
-
-This code repository does not automatically modify or push to the Overleaf
-repository. Copy regenerated PDFs to the exact paths in the table when updating
-the paper; those paths need no LaTeX changes.
 
 The code has been reviewed by Xin Bing, Dian Jin and Yuqian Zhang. Please contact uestcjd@gmail.com if there is any problem.

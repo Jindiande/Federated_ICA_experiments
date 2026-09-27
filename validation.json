@@ -48,5 +48,10 @@
     }
   ],
   "render_check_resolution": "1200-pixel page width",
-  "original_pdf_hashes_verified": 5
+  "original_pdf_hashes_verified": 5,
+  "clean_export_test": {
+    "only_git_tracked_files": true,
+    "plot_entry_points_passed": 3,
+    "numerical_verification_passed": true
+  }
 }

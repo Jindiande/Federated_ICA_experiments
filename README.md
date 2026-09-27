@@ -109,3 +109,5 @@ than silently replacing fresh results with archived values.
 This code repository does not automatically modify or push to the Overleaf
 repository. Copy regenerated PDFs to the exact paths in the table when updating
 the paper; those paths need no LaTeX changes.
+
+The code has been reviewed by Xin Bing, Dian Jin and Yuqian Zhang. Please contact uestcjd@gmail.com if there is any problem.

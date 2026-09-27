@@ -1,15 +1,6 @@
 # Federated ICA: simulation and MNIST figure reproduction
 
-Self-contained code for the **five figures currently referenced by the paper**
-in [Federated_setting_overleaf](https://github.com/Jindiande/Federated_setting_overleaf),
-snapshot commit `3ed8a5be225d6c415b8ef747aaf27446d2f16cab`.
-
-**Scope:** this repository reproduces the existing figures and their actual
-data-generating code. The MNIST figure pipeline rotates **pixel-side PCA
-eigenvectors** and returns `A = U @ R`. It is **not** the later sample-side
-`A = colnorm(U @ S @ R)` diagnostic experiment. Neither experiment calls a
-FastICA package. See [the protocol audit](PROTOCOL_AUDIT.md) for differences
-between the current manuscript prose and the code that generated its figures.
+This is the code repository for [Federated Independent Component Analysis via Spectral Alignment and Robust Aggregation](https://arxiv.org/abs/2505.20532).
 
 ## Install
 

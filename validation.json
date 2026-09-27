@@ -1,0 +1,52 @@
+{
+  "validated_on": "2026-09-27",
+  "simulation": {
+    "implementation": "MATLAB R2026a, main_2.m",
+    "full_rerun_completed": true,
+    "settings": 20,
+    "repetitions_per_setting": 10,
+    "method_evaluations": 1000,
+    "max_error_difference_from_archive": 0.0
+  },
+  "mnist": {
+    "implementation": "Python pixel-side Varimax (A=U R), reproducing archived paper figures",
+    "full_retraining_completed": true,
+    "fits": 151,
+    "method_evaluations": 150,
+    "max_error_difference_from_archive": 0.0
+  },
+  "archived_input_pdf_render_checks": [
+    {
+      "figure": "factors_sigma0.000.pdf",
+      "shape_equal": true,
+      "pixel_equal": true,
+      "mean_absolute_pixel_difference": 0.0
+    },
+    {
+      "figure": "factors_sigma2.000.pdf",
+      "shape_equal": true,
+      "pixel_equal": true,
+      "mean_absolute_pixel_difference": 0.0
+    },
+    {
+      "figure": "factors_sigma2.000_SF_SRF_factors6_10_3.pdf",
+      "shape_equal": true,
+      "pixel_equal": true,
+      "mean_absolute_pixel_difference": 0.0
+    },
+    {
+      "figure": "five_methods_threepanels.pdf",
+      "shape_equal": true,
+      "pixel_equal": true,
+      "mean_absolute_pixel_difference": 0.0
+    },
+    {
+      "figure": "recovery_error_five_methods.pdf",
+      "shape_equal": true,
+      "pixel_equal": true,
+      "mean_absolute_pixel_difference": 0.0
+    }
+  ],
+  "render_check_resolution": "1200-pixel page width",
+  "original_pdf_hashes_verified": 5
+}

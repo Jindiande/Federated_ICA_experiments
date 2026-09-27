@@ -1,0 +1,31 @@
+{
+  "paper_repository": "https://github.com/Jindiande/Federated_setting_overleaf",
+  "paper_commit": "3ed8a5be225d6c415b8ef747aaf27446d2f16cab",
+  "figures": [
+    {
+      "paper_path": "Styles/five_methods_threepanels.pdf",
+      "snapshot": "paper_figures/five_methods_threepanels.pdf",
+      "sha256": "e0ae3d8196282fcaea4cfdee73bc0b90ec497e091a685c7144b0035df9d0d7d6"
+    },
+    {
+      "paper_path": "Styles/mnist_rank10_five_methods_raw_signs/recovery_error_five_methods.pdf",
+      "snapshot": "paper_figures/recovery_error_five_methods.pdf",
+      "sha256": "dbf6036b36991a5114ec9cd204b1912b6abd2e750c7518b5c7a0e4b583fbcfff"
+    },
+    {
+      "paper_path": "Styles/mnist_rank10_five_methods_raw_signs/factors_sigma0.000.pdf",
+      "snapshot": "paper_figures/factors_sigma0.000.pdf",
+      "sha256": "6c04ba90c584b5c4a2cf7d39a6c97bdbf91268711707d476e6b02ea306013d71"
+    },
+    {
+      "paper_path": "Styles/mnist_rank10_five_methods_raw_signs/factors_sigma2.000.pdf",
+      "snapshot": "paper_figures/factors_sigma2.000.pdf",
+      "sha256": "e57e23e2d4f7e5430e4543ece7e562a038340a3ce0e454a2ec5b667f806cb815"
+    },
+    {
+      "paper_path": "Styles/mnist_rank10_five_methods_raw_signs/factors_sigma2.000_SF_SRF_factors6_10_3.pdf",
+      "snapshot": "paper_figures/factors_sigma2.000_SF_SRF_factors6_10_3.pdf",
+      "sha256": "6a81cc96e42025130034b12d9bc6897be144b057fc7d74664d377fb90821a2a5"
+    }
+  ]
+}
